@@ -1,0 +1,50 @@
+.pagination {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.page {
+  height: 40px;
+  width: 40px;
+  border: 1px solid var(--primary-main);
+  background: transparent;
+  color: var(--primary-main);
+  border-radius: 50%;
+  cursor: pointer;
+
+  &.current {
+    background: var(--primary-main);
+    color: var(--primary-light);
+  }
+
+  &:disabled {
+    border-color: transparent;
+    background: var(--disabled);
+    color: var(--icon-main);
+    cursor: default;
+  }
+}
+
+.arrow {
+  font-size: 12px;
+  border: none;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background: transparent;
+  cursor: pointer;
+
+  &.active {
+    background: var(--primary-main);
+    color: var(--primary-light);
+  }
+
+  &.disabled {
+    background: var(--disabled);
+    color: var(--icon-secondary);
+    cursor: default;
+  }
+}

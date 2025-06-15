@@ -1,0 +1,24 @@
+$breakpoint-mobile: 480px;
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 15px;
+}
+
+.title {
+  margin-bottom: 40px;
+  @media (max-width: $breakpoint-mobile) {
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+}
+
+.sortingWrapper {
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 100%;
+  border: 1px solid var(--border-light);
+  border-radius: 5px;
+}

@@ -1,0 +1,96 @@
+$breakpoint-mobile: 480px;
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.card {
+  width: 400px;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.2s ease;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  }
+  @media (max-width: $breakpoint-mobile) {
+    width: 300px;
+    margin-bottom: 10px;
+  }
+}
+
+.image {
+  height: 250px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 12px;
+  @media (max-width: $breakpoint-mobile) {
+    padding: 20px;
+  }
+}
+
+.title {
+  font-weight: 500;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+  @media (max-width: $breakpoint-mobile) {
+    font-size: 16px;
+  }
+}
+
+.infoWrapper {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+  @media (max-width: $breakpoint-mobile) {
+    gap: 3px;
+  }
+}
+
+.infoInner {
+  display: flex;
+  align-items: flex-end;
+  gap: 5px;
+}
+
+.price {
+  color: var(--text-primary);
+  font-weight: 600;
+  @media (max-width: $breakpoint-mobile) {
+    font-size: 14px;
+  }
+}
+
+.icon {
+  margin-right: 5px;
+  color: var(--icon-main);
+  svg {
+    font-size: 1rem;
+    @media (max-width: $breakpoint-mobile) {
+      font-size: 0.8rem;
+    }
+  }
+}
+
+.actionsWrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.iconActions {
+  display: flex;
+  gap: 5px;
+}
